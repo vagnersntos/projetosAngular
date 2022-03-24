@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { HomeComponent } from './home/home.component';
 import { MeusDadosComponent } from './meus-dados/meus-dados.component';
+import { TwoWayComponent } from './two-way/two-way.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     InterpolationComponent,
     HomeComponent,
-    MeusDadosComponent
+    MeusDadosComponent,
+    TwoWayComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

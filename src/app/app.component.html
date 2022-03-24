@@ -1,13 +1,15 @@
-<header><h1>[Impacta] treinamento Angular!!</h1></header>
 <div>
+  <header><h1>{{ title }}</h1></header>
   <nav>
     <a routerLink="/home">Home</a>
     <a routerLink="/interpolation">Interpolation</a>
-    <a routerLink="/meusDados">meus-dados</a>
+    <a routerLink="/meusDados">Meus Dados</a>
+    <a routerLink="/twoWay">TwoWay DataBinding</a>
   </nav>
   <br/>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
 </div>
-<main>
-  <router-outlet></router-outlet>
-</main>
-<footer>Copy Right &copy; {{ nome }} {{ ano }}</footer>
+<footer>Copyright &copy; {{ nome }} {{ ano }} </footer>
+

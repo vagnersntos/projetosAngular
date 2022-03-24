@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-meus-dados',
@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class MeusDadosComponent {
 
   public meusDados:Array<any> = [{
-    nome: "Vagner Santos",
+    nome: 'Vagner Santos',
     idade: 33,
-    estado: "BA",
-    cidade: "Salvador"
-  }]
+    estado:'BA',
+    cidade: 'Salvador'
+  }];
 }

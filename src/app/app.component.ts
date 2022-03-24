@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-alpha-impacta';
-
   nome:string = 'Vagner Santos';
-  ano:number = 2022
+  ano:number = 2022;
 }
