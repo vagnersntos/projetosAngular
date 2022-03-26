@@ -1,0 +1,32 @@
+<div>
+    <h2>Implementação da diretiva *ngIf</h2>
+    <div>
+      Propriedade "exibida" : <input type="checkbox" [(ngModel)]="exiba" />
+    </div>
+    <h2>Uso direto de *ngIf</h2>
+    <p *ngIf="exiba">
+      Texto Exibido quando o CheckBos estiver Ativado - Quando for TRUE
+    </p>
+    <p *ngIf="!exiba">
+      Texto exibido quando o checkBox estiver "desativado" - quando for FALSE
+    </p>
+
+    <!--usando *ngIf/else-->
+    <h2>Usando *ngIf/else</h2>
+    <p *ngIf ="exiba; else primeiroElse">
+      Texto exibido quando o checkbox estiver ativado - Quando for TRUE
+    </p>
+
+    <ng-template #primeiroElse>
+      Texto exibido quando o checkBox estiver "desativado - quando for FALSE"
+    </ng-template>
+
+    <!--usando o atributo hidden-->
+    <h2>Usando o atributo hidden</h2>
+    <p [hidden]="exiba">
+      Texto exibido quando o checkBox estiver "desativado" - FALSE
+    </p>
+    <p [hidden]="!exiba">
+      Texto exibido quando o checkbox estiver "ativado" - TRUE
+    </p>
+</div>

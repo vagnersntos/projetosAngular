@@ -4,13 +4,18 @@ import { HomeComponent } from './home/home.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { MeusDadosComponent } from './meus-dados/meus-dados.component';
 import { TwoWayComponent } from './two-way/two-way.component';
+import { CPaiComponent } from './c-pai/c-pai.component';
+import { NgIfComponent } from './ng-if/ng-if.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
   {path:'home', component:HomeComponent},
   {path:'interpolation', component:InterpolationComponent},
   {path:'meusDados', component:MeusDadosComponent},
-  {path:'twoWay', component:TwoWayComponent}
+  {path:'twoWay', component:TwoWayComponent},
+  {path:'inputProp', component:CPaiComponent},
+  {path:'outputProp', component:CPaiComponent},
+  {path:'ngIf', component:NgIfComponent}
 ];
 
 @NgModule({

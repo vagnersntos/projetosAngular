@@ -8,6 +8,10 @@ import { HomeComponent } from './home/home.component';
 import { MeusDadosComponent } from './meus-dados/meus-dados.component';
 import { TwoWayComponent } from './two-way/two-way.component';
 import {FormsModule} from '@angular/forms';
+import { CInputFilhoComponent } from './c-input-filho/c-input-filho.component';
+import { CPaiComponent } from './c-pai/c-pai.component';
+import { OutputComponent } from './output/output.component';
+import { NgIfComponent } from './ng-if/ng-if.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import {FormsModule} from '@angular/forms';
     InterpolationComponent,
     HomeComponent,
     MeusDadosComponent,
-    TwoWayComponent
+    TwoWayComponent,
+    CInputFilhoComponent,
+    CPaiComponent,
+    OutputComponent,
+    NgIfComponent
   ],
   imports: [
     BrowserModule,
