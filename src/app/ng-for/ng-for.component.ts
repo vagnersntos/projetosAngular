@@ -40,8 +40,7 @@ export class NgForComponent {
                       elenco: "MalcolmMcDowell, Patrick Magee, Michael Bates ",
                       anoLancamento: "04 de setembro, 1971"
                     }
-                  ]
-  ;
+                  ];
 }
 
 class Filme{

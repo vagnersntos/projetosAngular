@@ -6,6 +6,7 @@ import { MeusDadosComponent } from './meus-dados/meus-dados.component';
 import { TwoWayComponent } from './two-way/two-way.component';
 import { CPaiComponent } from './c-pai/c-pai.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
+import {NgForComponent} from './ng-for/ng-for.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path:'twoWay', component:TwoWayComponent},
   {path:'inputProp', component:CPaiComponent},
   {path:'outputProp', component:CPaiComponent},
-  {path:'ngIf', component:NgIfComponent}
+  {path:'ngIf', component:NgIfComponent},
+  {path:'ngFor', component:NgForComponent}
 ];
 
 @NgModule({
