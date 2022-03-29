@@ -1,0 +1,18 @@
+<div>
+  <h2> Implementação ngClass</h2>
+  <div [ngClass]="'color size'">
+    <p> Cor e fonte alterados pelas propriedades CSS
+      - descritas no arquivo .css - com a atribuição de propriedade de string.</p>
+  </div>
+  <div [ngClass]="cssAlteradoViaVar">
+    <p> Cor e fonte alyterados pelas propriedades CSS - descritas no arquivo .TS
+      com atribução de propriedade (property binding - uso direto)
+    </p>
+  </div>
+  <div [ngClass]="objCSS">
+    <p>
+      Cor e Fonte alterados pelas propriedades CSS - descritas no arqivo TS -
+      atribuição de propriedade de instÂncia da PropsCSS
+    </p>
+  </div>
+</div>

@@ -13,6 +13,8 @@ import { CPaiComponent } from './c-pai/c-pai.component';
 import { OutputComponent } from './output/output.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { NgForComponent } from './ng-for/ng-for.component';
+import { NgClassComponent } from './ng-class/ng-class.component';
+import { NgStyleComponent } from './ng-style/ng-style.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { NgForComponent } from './ng-for/ng-for.component';
     CPaiComponent,
     OutputComponent,
     NgIfComponent,
-    NgForComponent
+    NgForComponent,
+    NgClassComponent,
+    NgStyleComponent
   ],
   imports: [
     BrowserModule,
