@@ -3,5 +3,19 @@
     <!--primeira parte-->
     <br/>
     <input type="color" [(ngModel)]="cores" />
-    <div [ngStyle]="{'color': cores}"> Mude a cor do Texto!</div>
+    <div [ngStyle]="{'color': cores}">
+       Mude a cor do Texto!
+    </div>
+
+    <div>
+      <input type="number" [(ngModel)]="tamanho" />
+      <div [ngStyle]="{'font-size.px': tamanho}">
+        Muda o Tamanho da fonte do texto via propriedade no arquivo TS.
+      </div>
+    </div>
+
+    <br/>
+    <div [ngStyle]="objStyle">
+      Muda a cor e o tamanho da fonte do texto via propriedades descrita no arquivo TS.
+    </div>
 </div>
