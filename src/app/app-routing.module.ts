@@ -9,7 +9,9 @@ import { NgIfComponent } from './ng-if/ng-if.component';
 import {NgForComponent} from './ng-for/ng-for.component';
 import {NgClassComponent} from './ng-class/ng-class.component';
 import {NgStyleComponent} from './ng-style/ng-style.component';
-import {PipeComponent} from './pipe/pipe.component'
+import {PipeComponent} from './pipe/pipe.component';
+import {FormularioComponent} from './formulario/formulario.component';
+import {FormularioModelComponent} from './formulario-model/formulario-model.component'
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
@@ -23,7 +25,9 @@ const routes: Routes = [
   {path:'ngFor', component:NgForComponent},
   {path:'ngClass', component:NgClassComponent},
   {path:'ngStyle', component:NgStyleComponent},
-  {path:'pipe', component:PipeComponent}
+  {path:'pipe', component:PipeComponent},
+  {path:'formulario', component:FormularioComponent},
+  {path:'formModel', component:FormularioModelComponent}
 ];
 
 @NgModule({

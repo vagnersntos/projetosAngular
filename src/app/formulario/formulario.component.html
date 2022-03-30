@@ -1,0 +1,9 @@
+<div>
+  <form #capturaDados="ngForm" (ngSubmit)="receberDados(capturaDados.value)">
+    <input type="email" name="email" placeholder="Informe seu Email" ngModel />
+    <br/><br/>
+    <input type="password" name="password" placeholder="Informe sua Senha" ngModel />
+    <br/><br/>
+    <input type="submit" value="Enviar Dados" />
+  </form>
+</div>

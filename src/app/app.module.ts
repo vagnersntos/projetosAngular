@@ -7,7 +7,7 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { HomeComponent } from './home/home.component';
 import { MeusDadosComponent } from './meus-dados/meus-dados.component';
 import { TwoWayComponent } from './two-way/two-way.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { CInputFilhoComponent } from './c-input-filho/c-input-filho.component';
 import { CPaiComponent } from './c-pai/c-pai.component';
 import { OutputComponent } from './output/output.component';
@@ -16,6 +16,8 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { PipeComponent } from './pipe/pipe.component';
+import { FormularioComponent } from './formulario/formulario.component';
+import { FormularioModelComponent } from './formulario-model/formulario-model.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +33,15 @@ import { PipeComponent } from './pipe/pipe.component';
     NgForComponent,
     NgClassComponent,
     NgStyleComponent,
-    PipeComponent
+    PipeComponent,
+    FormularioComponent,
+    FormularioModelComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
