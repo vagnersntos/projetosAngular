@@ -12,6 +12,7 @@ import {NgStyleComponent} from './ng-style/ng-style.component';
 import {PipeComponent} from './pipe/pipe.component';
 import {FormularioComponent} from './formulario/formulario.component';
 import {FormularioModelComponent} from './formulario-model/formulario-model.component'
+import { ServiceComponent } from './service/service.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
@@ -27,7 +28,8 @@ const routes: Routes = [
   {path:'ngStyle', component:NgStyleComponent},
   {path:'pipe', component:PipeComponent},
   {path:'formulario', component:FormularioComponent},
-  {path:'formModel', component:FormularioModelComponent}
+  {path:'formModel', component:FormularioModelComponent},
+  {path:'service', component:ServiceComponent}
 ];
 
 @NgModule({

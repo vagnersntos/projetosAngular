@@ -1,0 +1,21 @@
+<div>
+  <h2>Implementação Services</h2>
+  <button (click)="acessandoProdutos()">Obter Produtos</button>
+  <br />
+  <table>
+    <thead>
+      <tr>
+        <th>Id do Produto</th>
+        <th>Nome do Produto</th>
+        <th>Preço do Produto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let produto of produtos">
+        <td>{{produto.idProduto}}</td>
+        <td>{{produto.nomeProduto}}</td>
+        <td>{{produto.precoProduto | currency: "BRL"}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

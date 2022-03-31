@@ -18,6 +18,8 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { FormularioModelComponent } from './formulario-model/formulario-model.component';
+import { ServiceComponent } from './service/service.component';
+import { ProductService } from './product.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { FormularioModelComponent } from './formulario-model/formulario-model.co
     NgStyleComponent,
     PipeComponent,
     FormularioComponent,
-    FormularioModelComponent
+    FormularioModelComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +46,7 @@ import { FormularioModelComponent } from './formulario-model/formulario-model.co
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
